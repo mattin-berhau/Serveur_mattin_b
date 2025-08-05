@@ -11,3 +11,7 @@ server_script 'webpack_builder.js'
 
 fx_version 'adamant'
 game 'common'
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'client/lib/.mocks.js',
+}

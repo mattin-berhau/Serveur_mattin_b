@@ -1,0 +1,36 @@
+name: Create new release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v4
+
+      - name: Update tag
+        uses: EndBug/latest-tag@v1
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Install zip
+        run: sudo apt install zip
+
+      - name: Bundle files
+        run: |
+          mkdir -p ./temp/ac_radio
+          cp ./{LICENSE,README.md,fxmanifest.lua,config.lua} ./temp/ac_radio
+          cp -r ./{locales,modules,resource,web} ./temp/ac_radio
+          cd ./temp && zip -r ../ac_radio.zip ./ac_radio
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ github.token }}
+          prerelease: false
+          files: ac_radio.zip

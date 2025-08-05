@@ -425,4 +425,21 @@ return {
 		stack = true,
 		close = true,
 	},
+	['radio'] = {
+	label = 'Radio',
+	weight = 100,
+	stack = true,
+	close = true,
+	client = {
+		export = 'ac_radio.openRadio',
+		remove = function(total)
+			-- Disconnets a player from the radio when all his radio items are removed.
+			if total < 1 and GetConvar('radio:disconnectWithoutRadio', 'true') == 'true' then
+				exports.ac_radio:leaveRadio()
+			end
+		end
+	},
+	},
+
+	
 }

