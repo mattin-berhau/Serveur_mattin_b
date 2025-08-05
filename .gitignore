@@ -2,8 +2,8 @@ alpine/
 cache/
 db/
 txData/
-server.cfg.bkp
 run.sh
+server.cfg.bkp
 server_secret.cfg
-.replxx_history
 permissions.cfg
+.replxx_history
