@@ -1,0 +1,9 @@
+alpine/
+cache/
+db/
+txData/
+server.cfg.bkp
+run.sh
+server_secret.cfg
+.replxx_history
+permissions.cfg
