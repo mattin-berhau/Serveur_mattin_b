@@ -36,7 +36,7 @@ local function Notify(notificatonType, length, message, title)
         type = notificatonType or "info",
         length = length or 5000,
         message = message or "ESX-Notify",
-        title = title or "New Notification",
+        title = title or "Nouvelle Notification",
         notificationSoundEnabled = Config.notificationSoundEnabled
     }))
 end

