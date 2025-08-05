@@ -68,12 +68,12 @@ Config.CustomAIPlates = "........" -- Custom plates for AI vehicles
 ]]
 
 Config.DiscordActivity = {
-    appId = 0, -- Discord Application ID,
-    assetName = "LargeIcon", --image name for the "large" icon.
+    appId = 1115916978431983616, -- Discord Application ID,
+    assetName = "_mattin_b", --image name for the "large" icon.
     assetText = "{server_name}", -- Text to display on the asset
     buttons = {
-        { label = "Join Server", url = "fivem://connect/{server_endpoint}" },
-        { label = "Discord", url = "https://discord.esx-framework.org" },
+        { label = "Se connecter", url = "fivem://connect/{server_endpoint}" },
+        { label = "Discord", url = "https://discord.gg/6BWDcpmtyU" },
     },
     presence = "{player_name} [{player_id}] | {server_players}/{server_maxplayers}",
     refresh = 1 * 60 * 1000, -- 1 minute
