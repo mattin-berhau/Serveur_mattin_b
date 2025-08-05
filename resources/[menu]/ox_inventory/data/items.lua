@@ -115,7 +115,7 @@ return {
 	},
 
 	['identification'] = {
-		label = 'Identification',
+		label = 'Carte d\'identité',
 		client = {
 			image = 'card_id.png'
 		}
@@ -139,7 +139,7 @@ return {
 	},
 
 	['phone'] = {
-		label = 'Phone',
+		label = 'Telephone',
 		weight = 190,
 		stack = false,
 		consume = 0,
@@ -175,7 +175,7 @@ return {
 	},
 
 	['water'] = {
-		label = 'Water',
+		label = 'Eau',
 		weight = 500,
 		client = {
 			status = { thirst = 200000 },
