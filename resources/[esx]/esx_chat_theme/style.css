@@ -63,8 +63,8 @@
 
 .chat-input > div {
     background-color: rgba(30, 30, 30, 0.7) !important;
-    border: calc(0.24vh / 2) solid #fb9c04ce;
-    outline: calc(0.24vh / 2) solid #fb9c04ce; /* to replace margin-background */
+    border: calc(0.24vh / 2) solid #457B9D;
+    outline: calc(0.24vh / 2) solid #457B9D; /* to replace margin-background */
     padding: calc(0.2vh / 2);
     border-radius: 5px;
     filter: url(#svgDropShadowFilter);
@@ -84,12 +84,12 @@
 
 .chat-input .prefix.any:before {
     content: '[';
-    color: #fb9b04;
+    color: #1D3557;
 }
 
 .chat-input .prefix.any:after {
     content: ']';
-    color: #fb9b04;
+    color: #1D3557;
     margin-right: 1%;
 }
 

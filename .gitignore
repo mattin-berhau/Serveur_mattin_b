@@ -2,6 +2,7 @@ alpine/
 cache/
 db/
 txData/
+bak/
 run.sh
 server.cfg.bkp
 server_secret.cfg
