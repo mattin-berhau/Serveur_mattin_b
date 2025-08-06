@@ -20,7 +20,6 @@ set resources_useSystemChat true
 set mysql_connection_string "mysql://NomUtilisateur:MotDePasse@localhost/NomBaseDeDonnée?waitForConnections=true&charset=utf8mb4"
 set mysql_ui true
 
-## Add system admins
 add_ace group.admin command allow # allow all commands
 add_ace group.admin command.quit deny # but don't allow quit
 add_principal identifier.fivem:IdentifiantFiveM group.admin #Mettre son ID
