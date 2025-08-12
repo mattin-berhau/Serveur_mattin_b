@@ -4,7 +4,7 @@
 
 return {
     -- Enable usable item for opening the radio
-    useUsableItem = false,
+    useUsableItem = true,
 
     -- Enable command for opening the radio
     useCommand = false,
@@ -19,13 +19,18 @@ return {
     volumeStep = 10,
 
     -- Frequency decimal precision
-    frequencyStep = 0.001,
+    frequencyStep = 0.01,
 
     -- Maximum amount of available frequencies (starting from 0)
     maximumFrequencies = 1000,
 
     -- Frequency restrictions for channels
-    restrictedChannels = {},
+    restrictedChannels = {
+        [10] = 'police',
+        [11] = {
+            police = 2,
+        },
+    },
 
     -- ! The following options will override pma-voice convars
     -- Enable radio voice effect (voice sounds like on a real radio)

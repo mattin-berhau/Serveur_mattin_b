@@ -15,8 +15,8 @@ Locales["en"] = {
     ["charnotfound"] = "Character #%s of %s doesn't exist",
 
     UI = {
-        ["title"] = "CHOIX DE PERSONNAGE",
-        ["char_info_title"] = "Informations du personnage",
-        ["play"] = "JOUER",
+        ["title"] = "CHARACTER SELECTION",
+        ["char_info_title"] = "Character Info",
+        ["play"] = "PLAY",
     }
 }

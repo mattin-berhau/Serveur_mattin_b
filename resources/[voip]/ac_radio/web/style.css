@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&display=swap');
 @font-face {
     font-family: 'Technology';
     src: url('assets/technology.ttf');
@@ -31,8 +31,8 @@
     position: absolute;
     width: 48%;
     height: 7.1%;
-    right: 28%;
-    bottom: 13.8%;
+    right: 27.9%;
+    bottom: 13.7%;
 }
 
 .channel-input input {
@@ -44,11 +44,11 @@
     padding-left: 10%;
 
     appearance: none;
-    background: linear-gradient(90deg, rgba(158, 189, 57, 1) 0%, rgba(119, 153, 60, 1) 100%);
+    background: #8b9c60;
     border-radius: 5px;
     color: #21381e;
     font-family: 'Technology';
-    font-size: 2rem;
+    font-size: 3vh;
 }
 
 .channel-input input::placeholder {
@@ -134,7 +134,7 @@
     transition: all .3s;
     padding: 10%;
     border-radius: 3px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: .8rem;
     color: #2d2427;
@@ -150,38 +150,3 @@
     pointer-events: none;
 }
 /* #endregion */
-
-.mute-status {
-    position: absolute;
-    top: 0px;
-    display: flex;
-    justify-content: flex-end;
-    opacity: 0;
-  }
-
-  .mute-status svg {
-    width: 20%;
-    margin: 4% 4% 0 0;
-    opacity: 0.9;
-  }
-
-  #is-not-muted {
-    display: none;
-  }
-
-  #volume {
-    position: absolute;
-    bottom: 4%;
-    width: 100%;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 0 4%;
-    font-family: 'Technology';
-    font-size: 1.2em;
-    opacity: 0;
-  }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}

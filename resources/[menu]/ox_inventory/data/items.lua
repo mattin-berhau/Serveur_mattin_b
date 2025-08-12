@@ -142,7 +142,7 @@ return {
 		label = 'Telephone',
 		weight = 190,
 		stack = false,
-		consume = 0,
+    	lose = true,
 		client = {
 			add = function(total)
 				if total > 0 then

