@@ -105,7 +105,7 @@ return {
 	},
 
 	PoliceArmoury = {
-		name = 'Police Armoury',
+		name = 'Armurerie',
 		groups = shared.police,
 		blip = {
 			id = 110, colour = 84, scale = 0.8
@@ -159,11 +159,19 @@ return {
 	VendingMachineDrinks = {
 		name = 'Distributeur',
 		inventory = {
-			{ name = 'water', price = 10 },
 			{ name = 'cola', price = 10 },
 		},
 		model = {
-			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`
+			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_soda_01`
+		}
+	},
+	FontaineEau = {
+		name = 'Fontaine d\'eau',
+		inventory = {
+			{ name = 'water', price = 0 },
+		},
+		model = {
+			`prop_watercooler`, `prop_watercooler_dark`, `prop_vend_water_01`
 		}
 	}
 }
