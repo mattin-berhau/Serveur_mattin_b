@@ -1,0 +1,3 @@
+[submodule "resources/[job]/ars_policejob"]
+	path = resources/[job]/ars_policejob
+	url = /Serveur/resources/[job]/
