@@ -65,7 +65,7 @@ Config.GenderBasedOnPed = true
 Config.AlwaysKeepProps = false
 
 Config.PersistUniforms = true -- Keeps Job / Gang Outfits on player reconnects / logout
-Config.OnDutyOnlyClothingRooms = true -- Set to `true` to make the clothing rooms accessible only to players who are On Duty
+Config.OnDutyOnlyClothingRooms = false -- Set to `true` to make the clothing rooms accessible only to players who are On Duty
 
 Config.BossManagedOutfits = false -- Allows Job / Gang bosses to manage their own job / gang outfits
 
@@ -560,7 +560,7 @@ Config.Stores = {
 Config.ClothingRooms = {
     {
         job = "police",
-        coords = vector4(454.91, -990.89, 30.69, 193.4),
+        coords = vector4(455.525268, -988.285706, 30.678344, 175.74803),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -575,6 +575,7 @@ Config.ClothingRooms = {
             vector3(460.4231262207, -987.94573974609, 30.69)
         }
     }
+    
 }
 
 
